@@ -16,14 +16,16 @@
         <module>mall-ware</module>
         <module>renren-fast</module>
         <module>renren-generator</module>
+        <module>mall-common</module>
     </modules>
 
     <!-- 统一管理jar包版本 -->
     <properties>
-        <mybatis-plus.version>3.4.1</mybatis-plus.version>
+        <mybatis-plus.version>3.5.3.1</mybatis-plus.version>
         <lombok.version>1.18.20</lombok.version>
         <httpcore.version>4.4.14</httpcore.version>
         <commons.lang.version>2.6</commons.lang.version>
+        <mysql-connector.version>8.0.31</mysql-connector.version>
     </properties>
 
     <dependencies>
@@ -38,6 +40,23 @@
             <version>${lombok.version}</version>
             <optional>true</optional>
         </dependency>
+        <!--父项目控制依赖-->
+
+
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.0.31</version>
+        </dependency>
+
+        <!--gulimall-common引入依赖-->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.0.31</version>
+        </dependency>
+
+
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpcore</artifactId>
